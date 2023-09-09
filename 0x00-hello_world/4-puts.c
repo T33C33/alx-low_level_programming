@@ -1,9 +1,8 @@
 #include <stdio.h>
-/*
- * main - main function to print a text accurately
- * Return: returns (0)
+/**
+ * main - prints Programming is like building a multilingual puzzle
  *
- * Description: prints exactly a string of texts
+ * Return: returns (0)
  */
 int main(void)
 {
