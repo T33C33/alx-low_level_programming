@@ -2,7 +2,6 @@
 
 /**
  * main - prints alphabet in lowercase
- * @lc: char variable
  *
  * Description: program that prints the alphabet in lowercase
  * Return: Always 0
