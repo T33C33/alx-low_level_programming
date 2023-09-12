@@ -4,7 +4,7 @@
 /**
  * main - program will assign a random number to the variable n
  *
- * Description: This program will assign a random number to the variable n each time it is executed.
+ * Description: assigns  a random number to a variable each time it is executed.
  * Return: Always 0
  */
 int main(void)
