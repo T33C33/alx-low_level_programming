@@ -2,6 +2,7 @@
 
 /**
  * _abs - computes the absolute value of an integer
+ * @i: local parameter
  *
  * Description: function that computes the absolute value of an integer
  * Return: Always 0
