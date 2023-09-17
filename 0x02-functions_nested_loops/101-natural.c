@@ -21,8 +21,8 @@ int main(void)
 		{
 			five = five + x;
 		}
-		x++;
 	}
+	x++;
 	sum = three + five;
 	printf("%d\n", sum);
 	return (0);
