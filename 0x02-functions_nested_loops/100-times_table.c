@@ -9,14 +9,12 @@
  */
 void print_times_table(int n)
 {
-	int x = 0;
+	int x, y;
 
 	if ((n >= 0) && (n <= 15))
 	{
 		for (x = 0; x <= n; x++)
 		{
-			int y = 0;
-
 			for  (y = 0; y <= n; y++)
 			{
 				int sum = x * y;
@@ -28,24 +26,21 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(sum + '0');
-				}
-				else if ((sum >= 10) && (sum < 100))
+				} else if ((sum >= 10) && (sum < 100))
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar((sum / 10) + '0');
 					_putchar((sum % 10) + '0');
-				}
-				else if (sum >= 100)
+				} else if (sum >= 100)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar((sum / 100) + '0');
 					_putchar(((sum / 10) % 10) + '0');
 					_putchar((sum % 10) + '0');
-				}
-				else if (y == 0)
+				} else if (y == 0)
 				{
 					_putchar(sum + '0');
 				}
