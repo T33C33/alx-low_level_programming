@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main: compute sum of the multiples of some numbers
+ * main - compute sum of the multiples of some numbers
  *
  * Description: compute sum of the multiples of some numbers
  * Return: Always returns 0
@@ -24,6 +24,6 @@ int main(void)
 		x++;
 	}
 	sum = three + five;
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
