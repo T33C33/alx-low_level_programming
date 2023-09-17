@@ -10,7 +10,7 @@
 int main(void)
 {
 	int x = 0;
-	long int three, five, sum;
+	int three, five, sum;
 
 	while (x < 1024)
 	{
@@ -24,6 +24,6 @@ int main(void)
 		x++;
 	}
 	sum = three + five;
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
