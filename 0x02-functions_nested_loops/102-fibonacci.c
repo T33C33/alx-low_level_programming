@@ -27,5 +27,5 @@ int main(void)
 		x = y;
 		y = z;
 	}
-	return 0;
+	return (0);
 }
