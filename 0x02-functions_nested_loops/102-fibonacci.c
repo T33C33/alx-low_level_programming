@@ -8,19 +8,19 @@
  */
 int main(void)
 {
-	int x = 1;
-	int y = 2;
-	int z;
+	unsigned long int x = 1;
+	unsigned long int y = 2;
+	unsigned long int z;
 	int i;
 	
-	printf("%d, %d", x, y);
+	printf("%llu, %llu", x, y);
 	for (i = 3; i <= 50; i++)
 	{
 		z = x + y;
-		printf(", %d", z);
+		printf(", %llu", z);
 		x = y;
 		y = z;
 	}
-   	printf("\n");
-       	return 0;
+	printf("\n");
+	return 0;
 }
