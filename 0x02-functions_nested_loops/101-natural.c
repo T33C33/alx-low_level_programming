@@ -9,20 +9,16 @@
  */
 int main(void)
 {
-	int x = 0;
-	unsigned long int three, five, sum;
+	int x = 1;
+	int sum = 0;
 
-	for (x = 0; x < 1024; x++)
+	for (x = 1; x < 1024; x++)
 	{
-		if ((three % 3) == 0)
+		if (((x % 3) == 0) || ((x % 5) == 0))
 		{
-			three = three + x;
-		} else if ((five % 5) == 0)
-		{
-			five = five + x;
+			sum = sum + x
 		}
 	}
-	sum = three + five;
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
