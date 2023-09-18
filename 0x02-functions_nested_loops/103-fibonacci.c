@@ -9,18 +9,20 @@
 int main(void)
 {
 	int x = 1;
+	int y = 2;
+	int z;
 	int sum = 0;
 
-	for (x = 1; x <= 4000000; x++)
+	while (x <= 4000000)
 	{
 		if ((x % 2) == 0)
 		{
 			sum = sum + x;
 		}
+		z = x + y;
+		x = y;
+		y = z;
 	}
-	int step = (x + (x - 1));
-
-	x = step;
 	printf("%d\n", sum);
 	return (0);
 }
