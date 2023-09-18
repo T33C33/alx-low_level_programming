@@ -8,19 +8,24 @@
  */
 int main(void)
 {
-	unsigned long long x = 1;
-	unsigned long long y = 2;
-	unsigned long long z;
+	long int x = 1;
+	long int y = 2;
+	long int z;
 	int i;
-	
-	printf("%llu, %llu", x, y);
-	for (i = 3; i <= 50; i++)
+
+	for (i = 1; i <= 50; i++)
 	{
+		if (x != 20365011074)
+		{
+			printf("%ld, ", x);
+		}
+		else
+		{
+			printf("%ld\n", x);
+		}
 		z = x + y;
-		printf(", %llu", z);
 		x = y;
 		y = z;
 	}
-	printf("\n");
 	return 0;
 }
