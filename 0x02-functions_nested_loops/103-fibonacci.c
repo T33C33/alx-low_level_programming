@@ -18,7 +18,7 @@ int main(void)
 			sum = sum + x;
 		}
 	}
-	int step = x + (x - 1);
+	int step = (x + (x - 1));
 
 	x = step;
 	printf("%d\n", sum);
