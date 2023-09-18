@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	unsigned long int x = 1;
-	unsigned long int y = 2;
-	unsigned long int z;
+	unsigned long long x = 1;
+	unsigned long long y = 2;
+	unsigned long long z;
 	int i;
 	
 	printf("%llu, %llu", x, y);
