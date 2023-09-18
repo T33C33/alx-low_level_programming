@@ -10,7 +10,7 @@
 int main(void)
 {
 	int x = 0;
-	int three, five, sum;
+	long int three, five, sum;
 
 	for (x = 0; x < 1024; x++)
 	{
@@ -23,6 +23,6 @@ int main(void)
 		}
 	}
 	sum = three + five;
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
