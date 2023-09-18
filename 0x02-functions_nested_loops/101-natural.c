@@ -12,7 +12,7 @@ int main(void)
 	int x = 0;
 	int three, five, sum;
 
-	while (x < 1024)
+	for (x = 0; x < 1024; x++)
 	{
 		if ((three % 3) == 0)
 		{
@@ -22,7 +22,6 @@ int main(void)
 			five = five + x;
 		}
 	}
-	x++;
 	sum = three + five;
 	printf("%d\n", sum);
 	return (0);
