@@ -24,22 +24,3 @@ void puts_half(char *str)
 	}
 	_putchar('\n');
 }
-/**	
- * half = (len / 2);
-	if ((len % 2) == 0)
-	{
-		for (i = half; i <= len; i++)
-		{
-			_putchar(str[i]);
-		}
-	}
-	else if ((len % 2) != 0)
-	{
-		for (n = (len - 1) / 2; n < len; n++)
-		{
-			_putchar(str[n]);
-		}
-	}
-	_putchar('\n');
-}
-*/
