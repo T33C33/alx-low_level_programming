@@ -6,7 +6,7 @@
  * @dest: 1st pointer to char
  * @src: 2nd pointer to char
  *
- * Description: function that copies string from a pointer variable into another
+ * Description: copies string from a pointer variable into another
  * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
