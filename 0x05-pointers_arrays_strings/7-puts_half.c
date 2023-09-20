@@ -24,7 +24,8 @@ void puts_half(char *str)
 	}
 	_putchar('\n');
 }
-/**	half = (len / 2);
+/**	
+ * half = (len / 2);
 	if ((len % 2) == 0)
 	{
 		for (i = half; i <= len; i++)
@@ -40,4 +41,5 @@ void puts_half(char *str)
 		}
 	}
 	_putchar('\n');
-}*/
+}
+*/
