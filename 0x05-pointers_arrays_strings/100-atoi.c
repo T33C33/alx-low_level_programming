@@ -14,7 +14,7 @@ int _atoi(char *s)
 	int i = 0;
 	int final = 0;
 	int min_add = 1;
-	
+
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
@@ -31,5 +31,5 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	return final * min_add;
+	return (final * min_add);
 }
