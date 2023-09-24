@@ -3,7 +3,7 @@
 /**
  * _strcat - concatenates two strings
  * @dest: first formal parameter
- * @srcr: second formal parameter to append
+ * @src: second formal parameter to append
  *
  * Description: function appends the src string to the dest string
  * overwriting the terminating null byte (\0) at the end of dest
@@ -22,7 +22,7 @@ char *_strcat(char *dest, char *src)
 	{
 		*dest = *src;
 		dest++;
-	       	src++;
+		src++;
 	}
 	*dest = '\0';
 	return (concat);
