@@ -21,6 +21,6 @@ int main(void)
 		i = j;
 		j = sum;
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
