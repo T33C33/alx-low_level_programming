@@ -2,6 +2,7 @@
 
 /**
  * cap_string - capitalizes all words of a string
+ * sep_func - separator function with all possible separators
  * @str: formal parameter pointer to a char
  * @c: formal parameter to predefined function
  *
