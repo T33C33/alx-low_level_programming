@@ -4,11 +4,11 @@
  * main - prints the first 98 Fibonacci numbers
  *
  * Description: prints the first 98 Fibonacci numbers,
- * starting with 1 and 2, 
+ * starting with 1 and 2,
  * followed by a new line.
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	unsigned int i = 1, j = 2, sum, next;
 
