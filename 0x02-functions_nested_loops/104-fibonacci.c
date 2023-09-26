@@ -10,26 +10,17 @@
  */
 int main()
 {
-	int x = 1;
-	int y = 2;
-	int skip;
-	int num;
-	
-	printf("%d, %d, ", x, y);
-	for (num = 2; num < 98; ++num)
+	unsigned int i = 1, j = 2, sum, next;
+
+	printf("%u, %u", i, j);
+
+	for (next = 2; next < 98; next++)
 	{
-		skip = x + y;
-		printf("%d", skip);
-		if (num < 97)
-		{
-			printf(", ");
-		}
-		else
-		{
-			printf("\n");
-		}
-		x = y;
-		y = skip;
+		sum = a + b;
+		printf(", %u", sum);
+		i = j;
+		j = sum;
 	}
-	return 0;
+	printf('\n');
+	return (0);
 }
