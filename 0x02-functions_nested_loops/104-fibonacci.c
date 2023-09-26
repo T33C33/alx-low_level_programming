@@ -10,10 +10,10 @@
  */
 int main(void)
 {
-	unsigned long int i = 1, j = 2, sum;
+	unsigned int i = 1, j = 2, sum;
 	unsigned int next;
 
-	printf("%lu, %lu", i, j);
+	printf("%u, %u", i, j);
 	for (next = 2; next < 98; next++)
 	{
 		sum = i + j;
