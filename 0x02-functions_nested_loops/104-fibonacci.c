@@ -16,7 +16,7 @@ int main(void)
 
 	for (next = 2; next < 98; next++)
 	{
-		sum = a + j;
+		sum = i + j;
 		printf(", %u", sum);
 		i = j;
 		j = sum;
