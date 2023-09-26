@@ -13,11 +13,11 @@ int main(void)
 	unsigned long long i = 1, j = 2, sum;
 	unsigned int next;
 
-	printf("%u, %u", i, j);
+	printf("%llu, %llu", i, j);
 	for (next = 2; next < 98; next++)
 	{
 		sum = i + j;
-		printf(", %u", sum);
+		printf(", %llu", sum);
 		i = j;
 		j = sum;
 	}
