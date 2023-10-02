@@ -11,16 +11,33 @@
  */
 
 int palindrome(char *s, int i, int j);
+int checklength(char *s);
 
 int is_palindrome(char *s)
 {
-	int length = 0;
+	int length = checklength(s);
 
-	while (s[length] != '\0')
-	{
-		length++;
-	}
 	return (palindrome(s, 0, length - 1));
+}
+
+/**
+ * checklength - checks length of string
+ * @s: input parameter
+ *
+ * Description: Recursively checks the length of string
+ * better substitute for loops and iteration
+ * Return: length of string
+ */
+int checklength(char *s)
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
+	{
+		return (1 + checklength(s + 1));
+	}
 }
 
 /**
