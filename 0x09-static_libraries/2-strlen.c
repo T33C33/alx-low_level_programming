@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * _strlen - returns the length of a string
+ * @s: passed parameter (pointer to an integer)
  *
- * Return: a value of type int
+ * Description: returns the length of a string
+ * Return: Always 0
  */
-char *_memset(char *s, char b, unsigned int n)
+int _strlen(char *s)
 {
-	return (0);
+	int length = 0;
+
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
 }

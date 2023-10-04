@@ -1,14 +1,20 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * _islower - checks for lowercase character
+ * @c: local parameter
  *
- * Return: a value of type int
+ * Description: a function that checks for lowercase character
+ * Return: 0 if c is lowercase, 0 otherwise
  */
-char *_memset(char *s, char b, unsigned int n)
+int _islower(int c)
 {
-	return (0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

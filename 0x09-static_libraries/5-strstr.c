@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * _strstr - empty function
+ * @needle: formal paramter
+ * @haystack: formal parameter
  *
  * Return: a value of type int
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strstr(char *haystack, char *needle)
 {
-	return (0);
+
 }

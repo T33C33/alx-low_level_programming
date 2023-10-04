@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * _puts - prints a string, followed by a new line, to stdout
+ * @str: passed parameter (pointer to a char)
  *
- * Return: a value of type int
+ * Description: prints a string, followed by a new line, to stdout
+ * Return: No return type hence, no return value;
  */
-char *_memset(char *s, char b, unsigned int n)
+void _puts(char *str)
 {
-	return (0);
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }

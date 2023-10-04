@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
+ * _memcpy - empty function
+ * @dest: formal paramter
+ * @src: formal parameter
  * @n: formal parameter 3
  *
  * Return: a value of type int
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (0);
+
 }

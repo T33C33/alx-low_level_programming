@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * _memset - empty function
+ * _strpbrk - empty function
  * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * @accept: formal parameter
  *
  * Return: a value of type int
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strpbrk(char *s, char *accept)
 {
-	return (0);
+
 }

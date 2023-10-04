@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * _isdigit - empty function
+ * @c: formal param
  *
  * Return: a value of type int
  */
-char *_memset(char *s, char b, unsigned int n)
+int _isdigit(int c)
 {
-	return (0);
+
 }
