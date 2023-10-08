@@ -1,14 +1,18 @@
 #include "main.h"
 
 /**
- * _memset - empty function
- * @s: formal paramter
- * @b: formal parameter
- * @n: formal parameter 3
+ * _abs - computes the absolute value of an integer
+ * @i: local parameter
  *
- * Return: a value of type int
+ * Description: function that computes the absolute value of an integer
+ * Return: Always 0
  */
-char *_memset(char *s, char b, unsigned int n)
+int _abs(int i)
 {
-	return (0);
+
+	if (i >= 0)
+	{
+		return (i);
+	}
+	return (-i);
 }
