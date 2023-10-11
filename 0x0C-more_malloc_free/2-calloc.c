@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * *_memset - Fills allocated memory with a constant byte
@@ -8,7 +9,7 @@
  * @count: number of copy times
  *
  * Return: pointer to dest
- */
+ *
 char *_memset(char *dest, char ch, unsigned int count)
 {
 	unsigned int i;
@@ -18,7 +19,7 @@ char *_memset(char *dest, char ch, unsigned int count)
 		dest[i] = ch;
 	}
 	return (dest);
-}
+}*/
 
 /**
  * *_calloc - allocates memory for an array, using malloc
