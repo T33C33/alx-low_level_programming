@@ -2,9 +2,9 @@
 
 /**
  * _print_rev_recursion - prints a string in reverse
- * @s: formal parameter pointer to a char
+ * @s: formal parameter pointer to char
  *
- * Description: a function that prints a string in reverse
+ * Description: function that prints string in reverse
  * Return: Void
  */
 void _print_rev_recursion(char *s)
