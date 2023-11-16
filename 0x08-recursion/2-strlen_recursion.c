@@ -2,9 +2,9 @@
 
 /**
  * _strlen_recursion - returns the length of a string
- * @s: formal parameter pointer to a char
+ * @s: formal parameter pointer to char
  *
- * Description: a function that returns the length of a string
+ * Description: function that returns the length of a string
  * Return: Length of string if *s != EOS
  * return 0 if not
  */
