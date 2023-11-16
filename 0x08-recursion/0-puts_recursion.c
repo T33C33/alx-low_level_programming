@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - prints a string, followed by a new line
- * @s: Formal Parameter pointer to a char
+ * @s: Formal Parameter pointer to char
  *
  * Description: This function prints a string followed by a new line
  * Return: Void
