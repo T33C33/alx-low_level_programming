@@ -4,7 +4,7 @@
  * factorial - returns the factorial of a given number
  * @n: Given number (formal parameter passed to functon)
  *
- * Description: a function that returns the factorial of a given number
+ * Description: function that returns the factorial of a given number
  * Return: -1 if n is lower than 0
  * else returns factorial of given number
  */
