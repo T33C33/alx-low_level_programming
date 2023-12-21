@@ -9,29 +9,27 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	FILE *file;
-	size_t c = 0;
-	int fd = 0;
+	int fd;
+	ssize_t write_count;
 
-	file = fopen(filename, "w");
-	if ((filename == NULL) || (file == NULL))
-	{
+	if (filename == NULL)
 		return (-1);
-	}
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (fd == -1)
+		return (-1);
 	if (text_content != NULL)
 	{
-		c = fwrite(text_content, sizeof(char), strlen(text_content), file);
-	}
-	fclose(file);
-	if (c != strlen(text_content))
-	{
-		return (-1);
-	}
-	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	if (fd == -1)
-	{
-		return (-1);
+		write_count = write(fd, text_content, strlen(text_content));
+		if (write_count == -1)
+		{
+			close(fd);
+			return (-1);
+		}
 	}
 	close(fd);
+	if (chmod(filename, S_IRUSR | S_IWUSR) == -1)
+	{
+		return (-1);
+	}
 	return (1);
 }
