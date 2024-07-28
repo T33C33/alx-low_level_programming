@@ -4,38 +4,36 @@
 /**
  * interpolation_search - Searches for a value in a sorted array using
  *                        the Interpolation search algorithm
- * @array: Pointer to the first element of the array to search in
+ * @arr: Pointer to the first element of the array to search in
  * @size: Number of elements in the array
  * @value: Value to search for
  *
  * Return: The first index where value is located, or -1 if not found
  */
-int interpolation_search(int *array, size_t size, int value)
+int interpolation_search(int *arr, size_t size, int value)
 {
-    size_t left = 0, right = size - 1;
+    size_t left, right;
 
-    if (array == NULL)
+    if (arr == NULL)
         return (-1);
 
-    while (left <= right && value >= array[left] && value <= array[right])
+    for (left = 0, right = size - 1; right >= left;)
     {
-        size_t index = left + (((double)(right - left) / (array[right] - array[left])) * (value - array[left]));
-    
-        if (index < size)
-            printf("Value checked array[%lu] = [%d]\n", index, array[index]);
+        size_t pos = left + (((double)(right - left) / (arr[right] - arr[left])) * (value - arr[left]));
+        if (pos < size)
+            printf("Value checked arr[%ld] = [%d]\n", pos, arr[pos]);
         else
         {
-            printf("Value checked array[%lu] is out of range\n", index);
-            return (-1); /* Return -1 if the value is out of range */
+            printf("Value checked arr[%ld] is out of range\n", pos);
+            break;
         }
 
-        if (array[index] == value)
-            return (index);
-
-        if (array[index] > value)
-            right = index - 1;
+        if (arr[pos] == value)
+            return (pos);
+        if (arr[pos] > value)
+            right = pos - 1;
         else
-            left = index + 1;
+            left = pos + 1;
     }
 
     return (-1);
